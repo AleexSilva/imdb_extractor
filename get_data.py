@@ -34,6 +34,16 @@ def get_imbdb_content():
     else:
         return None
 
+def create_imdb_local_file(content):
+    '''
+    Create a HTML file locally from a content
+    '''
+    try:
+        with open('imdb.html', 'w') as f:
+            f.write(content)
+            soup = BeautifulSoup(f, 'html.parser')
+    except:
+        pass
 
 def main():
     pass
