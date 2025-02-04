@@ -45,6 +45,21 @@ def create_imdb_local_file(content):
     except:
         pass
 
+
+def get_imdb_file_local_file():
+    '''
+    Read the HTML file
+    '''
+    content = None
+    
+    try:
+        with open('imdb.html', 'r') as f:
+            content = f.read()
+    except:
+        pass
+    
+    return content
+
 def main():
     pass
 
