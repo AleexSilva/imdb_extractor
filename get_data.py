@@ -60,6 +60,23 @@ def get_imdb_file_local_file():
     
     return content
 
+def get_local_imdb_content():
+    '''
+    Get the content of the HTML file
+    if it does not exist, download it
+    
+    Returns:
+        The content of the HTML file
+    '''
+    content = get_imdb_file_local_file()
+    if content:
+        return content
+    
+    content = get_imbdb_content()
+    create_imdb_local_file(content)
+    
+    return content
+
 def main():
     pass
 
