@@ -1,0 +1,503 @@
+[
+    {
+        "Name": "The Brutalist (2024)",
+        "Categories": [
+            "Drama"
+        ],
+        "Cast": [
+            "Adrien Brody",
+            "Felicity Jones",
+            "Guy Pearce",
+            "Joe Alwyn"
+        ]
+    },
+    {
+        "Name": "Amenaza en el aire (2025)",
+        "Categories": [
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "Cast": [
+            "Michelle Dockery",
+            "Mark Wahlberg",
+            "Topher Grace",
+            "Leah Remini"
+        ]
+    },
+    {
+        "Name": "Better Man (2024)",
+        "Categories": [
+            "Biography",
+            "Fantasy",
+            "Music"
+        ],
+        "Cast": [
+            "Robbie Williams",
+            "Jonno Davies",
+            "Steve Pemberton",
+            "Alison Steadman"
+        ]
+    },
+    {
+        "Name": "Bring Them Down (2024)",
+        "Categories": [
+            "Drama",
+            "Thriller"
+        ],
+        "Cast": [
+            "Christopher Abbott",
+            "Barry Keoghan",
+            "Colm Meaney",
+            "Nora-Jane Noone"
+        ]
+    },
+    {
+        "Name": "Mickey's Mouse Trap (2024)",
+        "Categories": [
+            "Comedy",
+            "Horror",
+            "Thriller"
+        ],
+        "Cast": [
+            "Simon Phillips",
+            "Sophie McIntosh",
+            "Madeline Kelman",
+            "Ben Harris"
+        ]
+    },
+    {
+        "Name": "Captain America: Brave New World (2025)",
+        "Categories": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "Cast": [
+            "Harrison Ford",
+            "Rosa Salazar",
+            "Liv Tyler",
+            "Giancarlo Esposito"
+        ]
+    },
+    {
+        "Name": "Bridget Jones: Loca por él (2025)",
+        "Categories": [
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "Cast": [
+            "Leo Woodall",
+            "Renée Zellweger",
+            "Hugh Grant",
+            "Isla Fisher"
+        ]
+    },
+    {
+        "Name": "Rosario (2025)",
+        "Categories": [
+            "Horror"
+        ],
+        "Cast": [
+            "David Dastmalchian",
+            "Paul Ben-Victor",
+            "José Zúñiga",
+            "Emeraude Toubia"
+        ]
+    },
+    {
+        "Name": "Aún estoy aquí (2024)",
+        "Categories": [
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "Cast": [
+            "Fernanda Torres",
+            "Fernanda Montenegro",
+            "Selton Mello",
+            "Valentina Herszage"
+        ]
+    },
+    {
+        "Name": "Policán (2025)",
+        "Categories": [
+            "Animation",
+            "Action",
+            "Adventure"
+        ],
+        "Cast": [
+            "Pete Davidson",
+            "Poppy Liu",
+            "Lil Rel Howery",
+            "Isla Fisher"
+        ]
+    },
+    {
+        "Name": "Bambi: Una aventura en el bosque (2024)",
+        "Categories": [
+            "Adventure",
+            "Drama",
+            "Family"
+        ],
+        "Cast": [
+            "Mylène Farmer"
+        ]
+    },
+    {
+        "Name": "The Sloth Lane (2024)",
+        "Categories": [
+            "Animation",
+            "Adventure",
+            "Family"
+        ],
+        "Cast": [
+            "Leslie Jones",
+            "Remy Hii",
+            "Olivia Vásquez",
+            "Teo Vergara"
+        ]
+    },
+    {
+        "Name": "Flow, un mundo que salvar (2024)",
+        "Categories": [
+            "Animation",
+            "Adventure",
+            "Family"
+        ],
+        "Cast": []
+    },
+    {
+        "Name": "El mono (2025)",
+        "Categories": [
+            "Horror"
+        ],
+        "Cast": [
+            "Theo James",
+            "Osgood Perkins",
+            "Elijah Wood",
+            "Tatiana Maslany"
+        ]
+    },
+    {
+        "Name": "Este amor sí que duele (2025)",
+        "Categories": [
+            "Action",
+            "Comedy"
+        ],
+        "Cast": [
+            "Ke Huy Quan",
+            "Ariana DeBose",
+            "Mustafa Shakir",
+            "Lio Tipton"
+        ]
+    },
+    {
+        "Name": "Biónica (2024)",
+        "Categories": [
+            "Sci-Fi"
+        ],
+        "Cast": [
+            "Fabián Arenillas",
+            "Julia Martínez Rubio",
+            "Luciana Grasso",
+            "Santiago Pedrero"
+        ]
+    },
+    {
+        "Name": "Septiembre 5 (2024)",
+        "Categories": [
+            "Drama",
+            "History",
+            "Thriller"
+        ],
+        "Cast": [
+            "Peter Sarsgaard",
+            "John Magaro",
+            "Ben Chaplin",
+            "Leonie Benesch"
+        ]
+    },
+    {
+        "Name": "Novocaine (2025)",
+        "Categories": [
+            "Action",
+            "Comedy",
+            "Thriller"
+        ],
+        "Cast": [
+            "Amber Midthunder",
+            "Jack Quaid",
+            "Ray Nicholson",
+            "Betty Gabriel"
+        ]
+    },
+    {
+        "Name": "Las vidas de Sing Sing (2023)",
+        "Categories": [
+            "Drama"
+        ],
+        "Cast": [
+            "Colman Domingo",
+            "Clarence Maclin",
+            "Sean San Jose",
+            "Paul Raci"
+        ]
+    },
+    {
+        "Name": "Blanca Nieves (2025)",
+        "Categories": [
+            "Adventure",
+            "Family",
+            "Fantasy"
+        ],
+        "Cast": [
+            "Gal Gadot",
+            "Rachel Zegler",
+            "Andrew Burnap",
+            "Patrick Page"
+        ]
+    },
+    {
+        "Name": "Una película de Minecraft (2025)",
+        "Categories": [
+            "Action",
+            "Adventure",
+            "Comedy"
+        ],
+        "Cast": [
+            "Jennifer Coolidge",
+            "Jason Momoa",
+            "Jack Black",
+            "Emma Myers"
+        ]
+    },
+    {
+        "Name": "El Amateur: Operación Venganza (2025)",
+        "Categories": [
+            "Action",
+            "Thriller"
+        ],
+        "Cast": [
+            "Rachel Brosnahan",
+            "Jon Bernthal",
+            "Caitríona Balfe",
+            "Rami Malek"
+        ]
+    },
+    {
+        "Name": "Sinners (2025)",
+        "Categories": [
+            "Drama",
+            "Horror",
+            "Thriller"
+        ],
+        "Cast": [
+            "Hailee Steinfeld",
+            "Jack O'Connell",
+            "Michael B. Jordan",
+            "Wunmi Mosaku"
+        ]
+    },
+    {
+        "Name": "Sneaks (2025)",
+        "Categories": [
+            "Animation",
+            "Family"
+        ],
+        "Cast": [
+            "Anthony Mackie",
+            "Laurence Fishburne",
+            "Keith David",
+            "Martin Lawrence"
+        ]
+    },
+    {
+        "Name": "Thunderbolts* (2025)",
+        "Categories": [
+            "Action",
+            "Adventure",
+            "Crime"
+        ],
+        "Cast": [
+            "Sebastian Stan",
+            "Florence Pugh",
+            "Rachel Weisz",
+            "Geraldine Viswanathan"
+        ]
+    },
+    {
+        "Name": "Eternal Return (2025)",
+        "Categories": [
+            "Romance"
+        ],
+        "Cast": [
+            "Naomi Scott",
+            "Kit Harington",
+            "Sonoya Mizuno",
+            "Simon Callow"
+        ]
+    },
+    {
+        "Name": "Misión imposible: Sentencia Final (2025)",
+        "Categories": [
+            "Action",
+            "Adventure",
+            "Thriller"
+        ],
+        "Cast": [
+            "Shea Whigham",
+            "Hannah Waddingham",
+            "Tom Cruise",
+            "Tramell Tillman"
+        ]
+    },
+    {
+        "Name": "Karate Kid: Legends (2025)",
+        "Categories": [
+            "Action",
+            "Drama",
+            "Family"
+        ],
+        "Cast": [
+            "Jackie Chan",
+            "Joshua Jackson",
+            "Ming-Na Wen",
+            "Ralph Macchio"
+        ]
+    },
+    {
+        "Name": "Ballerina (2025)",
+        "Categories": [
+            "Action",
+            "Thriller"
+        ],
+        "Cast": [
+            "Keanu Reeves",
+            "Ana de Armas",
+            "Catalina Sandino Moreno",
+            "Norman Reedus"
+        ]
+    },
+    {
+        "Name": "Cómo entrenar a tu dragón (2025)",
+        "Categories": [
+            "Action",
+            "Adventure",
+            "Comedy"
+        ],
+        "Cast": [
+            "Mason Thames",
+            "Nico Parker",
+            "Gerard Butler",
+            "Julian Dennison"
+        ]
+    },
+    {
+        "Name": "Elio (2025)",
+        "Categories": [
+            "Animation",
+            "Adventure",
+            "Comedy"
+        ],
+        "Cast": [
+            "Yonas Kibreab",
+            "Zoe Saldana",
+            "Brad Garrett",
+            "August Linn"
+        ]
+    },
+    {
+        "Name": "F1 (2025)",
+        "Categories": [
+            "Drama",
+            "Sport"
+        ],
+        "Cast": [
+            "Brad Pitt",
+            "Kerry Condon",
+            "Javier Bardem",
+            "Tobias Menzies"
+        ]
+    },
+    {
+        "Name": "Superman (2025)",
+        "Categories": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "Cast": [
+            "Isabela Merced",
+            "Nicholas Hoult",
+            "Milly Alcock",
+            "Rachel Brosnahan"
+        ]
+    },
+    {
+        "Name": "The Carpenter's Son (2025)",
+        "Categories": [
+            "Horror"
+        ],
+        "Cast": [
+            "Nicolas Cage",
+            "Noah Jupe",
+            "FKA twigs",
+            "Souheila Yacoub"
+        ]
+    },
+    {
+        "Name": "Homo Argentum (2025)",
+        "Categories": [
+            "Comedy"
+        ],
+        "Cast": [
+            "Guillermo Francella"
+        ]
+    },
+    {
+        "Name": "Groove Tails (2025)",
+        "Categories": [
+            "Animation"
+        ],
+        "Cast": []
+    },
+    {
+        "Name": "Tron 3 (2025)",
+        "Categories": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "Cast": [
+            "Evan Peters",
+            "Sarah Desjardins",
+            "Jodie Turner-Smith",
+            "Gillian Anderson"
+        ]
+    },
+    {
+        "Name": "The Epiphany (2025)",
+        "Categories": [
+            "Thriller"
+        ],
+        "Cast": [
+            "Sylvester Stallone"
+        ]
+    },
+    {
+        "Name": "Avatar: Fire and Ash (2025)",
+        "Categories": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "Cast": [
+            "Zoe Saldana",
+            "Kate Winslet",
+            "Sigourney Weaver",
+            "Sam Worthington"
+        ]
+    }
+]

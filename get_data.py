@@ -26,9 +26,7 @@ def get_imbdb_content():
         'User-Agent': 'Mozilla/5.0'
     }
     response = requests.get(URL,headers=headers)
-    #soup = BeautifulSoup(response.text, 'html.parser')
-    print(response.status_code)
-    print(response.text)
+    
     if response.status_code == 200:
         return response.text
     else:
