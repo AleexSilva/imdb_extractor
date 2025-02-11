@@ -154,7 +154,24 @@ def create_csv_movies(movies):
             ])
 
 def create_json_movies(movies):
+    """
+    Converts a list of movie tuples into a JSON file.
 
+    Args:
+        movies (list): A list of tuples, each containing the movie name,
+                       categories, and cast.
+
+    The JSON file 'movies.json' is created in the 'data' directory with the
+    following structure:
+    [
+        {
+            "Name": "Movie Name",
+            "Categories": ["Category1", "Category2"],
+            "Cast": ["Actor1", "Actor2"]
+        },
+        ...
+    ]
+    """
     # Create a list of dictionaries from the list of movie tuples
     movies_list = [
         {
