@@ -17,20 +17,27 @@ import json
 URL = 'https://www.imdb.com/calendar/?region=AR'
 
 def get_imbdb_content():
-    '''
-    Get access to IMDB trought a request
-    
+    """
+    Fetch the HTML content of the IMDB page via an HTTP GET request.
+
     Returns:
-        The content of the request (HTML)
-    '''
-    headers={
+        str or None: The HTML content of the page if the request is successful; 
+        otherwise, None.
+    """
+    # Define the request headers with a User-Agent to mimic a browser
+    headers = {
         'User-Agent': 'Mozilla/5.0'
     }
-    response = requests.get(URL,headers=headers)
     
+    # Send a GET request to the specified URL
+    response = requests.get(URL, headers=headers)
+    
+    # Check if the request was successful
     if response.status_code == 200:
+        # Return the HTML content of the response
         return response.text
     else:
+        # Return None if the request failed
         return None
 
 def create_imdb_local_file(content):
@@ -44,19 +51,25 @@ def create_imdb_local_file(content):
     except:
         pass
 
-
 def get_imdb_file_local_file():
-    '''
-    Read the HTML file
-    '''
+    """
+    Reads the HTML file and returns its content.
+
+    Returns:
+        str: The content of the HTML file, or None if an error occurs.
+    """
     content = None
     
     try:
+        # Attempt to open the file in read mode
         with open('imdb.html', 'r') as f:
+            # Read the file content
             content = f.read()
-    except:
-        pass
+    except Exception as e:
+        # Catch any exceptions and set content to None
+        content = None
     
+    # Return the file content or None if an error occurred
     return content
 
 def get_local_imdb_content():
@@ -76,51 +89,85 @@ def get_local_imdb_content():
     
     return content
 
-
 def get_movie_data(tag):
+    """
+    Extracts movie data such as name, categories, and cast from an HTML tag.
+
+    Args:
+        tag (Tag): A BeautifulSoup Tag object containing movie information.
+
+    Returns:
+        tuple: A tuple containing the movie name, a list of categories, and a list of cast members.
+    """
+    # Find the main div that contains the movie information
+    main_div = tag.find('div', {'class': 'ipc-metadata-list-summary-item__c'})
     
-    main_div = tag.find('div', {'class':'ipc-metadata-list-summary-item__c'})
-        
+    # Extract the movie name
     name = main_div.div.a.text
     
-    ul_category = main_div.div.find('ul',{
-            'class': 'ipc-inline-list ipc-inline-list--show-dividers ipc-inline-list--no-wrap ipc-inline-list--inline ipc-metadata-list-summary-item__tl base'})
+    # Find the unordered list that contains the categories
+    ul_category = main_div.div.find('ul', {
+        'class': 'ipc-inline-list ipc-inline-list--show-dividers ipc-inline-list--no-wrap ipc-inline-list--inline ipc-metadata-list-summary-item__tl base'
+    })
     
+    # Find the unordered list that contains the cast
     ul_cast = main_div.div.find('ul', {
-            'class': 'ipc-inline-list ipc-inline-list--show-dividers ipc-inline-list--no-wrap ipc-inline-list--inline ipc-metadata-list-summary-item__stl base'
-        })
+        'class': 'ipc-inline-list ipc-inline-list--show-dividers ipc-inline-list--no-wrap ipc-inline-list--inline ipc-metadata-list-summary-item__stl base'
+    })
 
-    categories = [category.span.text for category in ul_category.find_all('li') ]
+    # Extract the categories as a list of strings
+    categories = [category.span.text for category in ul_category.find_all('li')]
     
+    # Extract the cast as a list of strings, if available
+    cast = [cast.span.text for cast in ul_cast.find_all('li')] if ul_cast else []
+    
+    return (name, categories, cast)
 
-    cast = [cast.span.text for cast in ul_cast.find_all('li') ] if ul_cast else []
-    
-    return (name,categories,cast)
- 
 def create_csv_movies(movies):
-    with open('data/movies.csv', 'w',encoding = 'Latin-1') as file:
-        writer = csv.writer(file, delimiter = ';')
+    """
+    Converts a list of movie tuples into a CSV file.
+
+    Args:
+        movies (list): A list of tuples, each containing the movie name,
+                       categories, and cast.
+
+    The CSV file 'movies.csv' is created in the 'data' directory with the
+    following structure:
+    Name;Categories;Cast
+    Movie Name;Category1, Category2;Actor1, Actor2
+    ...
+    """
+    # Open the CSV file for writing
+    with open('data/movies.csv', 'w', encoding='Latin-1') as file:
+        # Create a CSV writer with a semicolon delimiter
+        writer = csv.writer(file, delimiter=';')
+        
+        # Write the header row
         writer.writerow(['Name', 'Categories', 'Cast'])
+        
+        # Write each movie as a row
         for movie in movies:
             writer.writerow([
-                movie[0],
-                ", ".join(movie[1]),
-                ", ".join(movie[2])
+                movie[0],  # Movie name
+                ', '.join(movie[1]),  # Categories, comma-separated
+                ', '.join(movie[2])  # Cast, comma-separated
             ])
 
 def create_json_movies(movies):
-   
-   movies_list = [
-       {
+
+    # Create a list of dictionaries from the list of movie tuples
+    movies_list = [
+        {
             'Name': movie[0],
             'Categories': movie[1],
             'Cast': movie[2]
         }
-       for movie in movies
-   ]
-   
-   with open('data/movies.json', 'w',encoding ='UTF-8') as file:
-        json.dump(movies_list,file, indent=4,ensure_ascii=False)
+        for movie in movies
+    ]
+    
+    # Write the list of dictionaries to a JSON file
+    with open('data/movies.json', 'w', encoding='UTF-8') as file:
+        json.dump(movies_list, file, indent=4, ensure_ascii=False)
 
 def main():
     """
