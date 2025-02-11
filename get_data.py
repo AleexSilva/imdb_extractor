@@ -172,6 +172,9 @@ def create_json_movies(movies):
         ...
     ]
     """
+    print('Creating movies.json...')
+    print(f'Number of movies to be saved: {len(movies)}')
+    
     # Create a list of dictionaries from the list of movie tuples
     movies_list = [
         {
@@ -185,6 +188,8 @@ def create_json_movies(movies):
     # Write the list of dictionaries to a JSON file
     with open('data/movies.json', 'w', encoding='UTF-8') as file:
         json.dump(movies_list, file, indent=4, ensure_ascii=False)
+    
+    print('movies.json created')
 
 def main():
     """
